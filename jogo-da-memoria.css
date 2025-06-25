@@ -1,0 +1,145 @@
+/* Estilos para o banner do jogo */
+#banner-game {
+    width: 60%;
+    border-radius: 35px;
+}
+
+/* Estilos do game-intro */
+#game-intro {
+    margin-bottom: 30px;
+}
+
+/* Estilo do tabuleiro e dos cards */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.game-card {
+    width: 100px;
+    height: 100px;
+    background-color: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.game-card img.hidden {
+    display: none;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+}
+
+.game-card.flipped {
+    background-color: #ffffff;
+}
+
+.game-card.matched {
+    background-color: #48a72b;  
+    pointer-events: none;      
+}
+
+/* Mensagem Final */
+#end-screen {
+    margin-bottom: 50px;
+}
+
+/* Estilo para botões */
+main .btn {
+    padding: 10px 30px;
+    font-size: 18px; 
+    color: white;
+    background-color: #FFC107; 
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover: efeito ao passar o mouse */
+main .btn:hover {
+    background-color: #dba503;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o tempo do jogo */
+#game-timer {
+    display: none; /* Esconde o tempo inicialmente */
+    font-size: 24px;
+    color: white;
+    background-color: #2196F3; /* Cor semelhante à dos cards */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+/* Mostrar o tempo apenas durante o jogo */
+#game-timer.visible {
+    display: inline-block; /* Torna o tempo visível quando a classe .visible for adicionada */
+}
+
+/* Estilo do botão "Reiniciar Jogo" */
+#restart-button {
+    background-color: #48a72b;
+}
+
+#restart-button:hover {
+    background-color: #3a8c22;
+}
+
+/* Estilo do tempo final na tela de fim */
+#end-screen .final-time {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFC107; /* Amarelo para destacar */
+    background-color: #2196F3; /* Cor de fundo semelhante */
+    padding: 15px 30px;
+    border-radius: 35px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+/* Esconde o tempo na página inicial */
+#game-timer {
+    font-size: 24px;
+    color: white;
+    background-color: #2196F3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 20px auto;  /* Centraliza e dá espaço inferior */
+    text-align: center;
+    display: none; /* controlado via JS */
+    width: fit-content;
+}
+
+/* Mostrar o tempo apenas durante o jogo */
+#game-timer.visible {
+    display: block;
+    background-color: #2196F3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+  
