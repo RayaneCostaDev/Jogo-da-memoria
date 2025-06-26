@@ -14,4 +14,4 @@ O comportamento interativo do jogo é controlado com JavaScript.
 Botão de "Reiniciar Jogo" que embaralha as cartas e reseta o placar.
 
 🌐 Visualize no GitHub Pages
-Acesse o projeto publicado através deste link: 
+Acesse o projeto publicado através deste link: https://rayanecostadev.github.io/Jogo-da-memoria/
